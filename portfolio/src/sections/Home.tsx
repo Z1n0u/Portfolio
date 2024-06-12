@@ -2,8 +2,7 @@
 
 export function Home () {
   return (
-    <div className="relative h-screen w-full">
-      <div className="absolute top-1/2 -translate-y-1/2 left-24">
+      <div className="absolute top-1/2 translate-y-[6.25rem]  left-24">
         <div className="flex mb-3">
           <div className="min-w-4 mr-3 h-2 md:h-3 lg:h-4 w-28 bg-green-50"></div>
           <div className="min-w-3 mr-3 h-2 md:h-3 lg:h-4 w-16 bg-green-400"></div>
@@ -13,7 +12,7 @@ export function Home () {
           <div className="min-w-4 mr-3 h-2 md:h-3 lg:h-4 w-44 bg-green-50"></div>
         </div>
         <div className="flex mb-3">
-          <div className="min-w-4 mr-3 h-2 md:h-3 lg:h-4 w-16 bg-green-50"></div>
+          <div className="min-w-4 mr-3 h-2 md:h-3 lg:h-4 w-20 bg-green-50"></div>
           <div className="min-w-3 mr-3 h-2 md:h-3 lg:h-4 w-4 bg-green-400"></div>
           <div className="min-w-3 mr-3 h-2 md:h-3 lg:h-4 w-12 bg-green-400"></div>
           <div className="min-w-3 mr-3 h-2 md:h-3 lg:h-4 w-32 bg-green-400"></div>
@@ -25,7 +24,7 @@ export function Home () {
           <div className="min-w-3 mr-3 h-2 md:h-3 lg:h-4 w-44 bg-green-400"></div>
         </div>
         <div className="mb-3 h-2 md:h-3 lg:h-4"></div>
-        <div className="flex mb-3 ml-16">
+        <div className="flex mb-3 ml-14">
           <div className="min-w-4 mr-3 h-2 md:h-3 lg:h-4 w-16 bg-green-50"></div>
           <div className="min-w-3 mr-3 h-2 md:h-3 lg:h-4 w-4 bg-green-400"></div>
           <div className="min-w-3 mr-3 h-2 md:h-3 lg:h-4 w-12 bg-green-400"></div>
@@ -60,6 +59,5 @@ export function Home () {
         </div>
         <div className="w-[1px] h-[97%] bg-white absolute -left-6 top-0 after:absolute after:bottom-0 after:-left-2 after:h-0 after:w-0 after:border-x-8 after:border-x-transparent after:border-t-[9px]"></div>
       </div>
-    </div>
   );
 }
