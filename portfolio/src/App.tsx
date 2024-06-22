@@ -5,6 +5,7 @@ import { Canvas,useFrame} from '@react-three/fiber'
 import {Model} from './Compenents/Model'
 import { Suspense, useMemo,useEffect, useRef } from 'react'
 import * as THREE from 'three'
+import { ScrollControls } from '@react-three/drei'
 
 export default function App() {
 const distance=25;
@@ -28,18 +29,20 @@ return (
                 <primitive object={spotlight.target} position={[0, 0, -5]} />
             </group>
             <Suspense fallback={null}>
-              <Model />
+              <ScrollControls pages={2.2}>
+                <Model />
+              </ScrollControls>
             </Suspense>
         </Canvas>
     </div>
-      {/* <Navbar/> */}
-      {/* <div className='w-full h-full fixed top-0'>
+      <Navbar/>
+      <>
         <div className='absolute top-0 left-0 w-full'>
           
           <Home/>
 
         </div>
-      </div> */}
+      </>
     </>
   )
 }

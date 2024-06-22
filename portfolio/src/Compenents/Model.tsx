@@ -1,17 +1,37 @@
 
-import { useGLTF } from '@react-three/drei'
+import { PerspectiveCamera, useGLTF, useScroll } from '@react-three/drei'
 import { OrbitControls } from '@react-three/drei'
+import { useFrame } from '@react-three/fiber'
+import { useRef, useState } from 'react'
 import * as THREE from 'three'
+
 export function Model(props :any) {
+  const scroll = useScroll()
   const { nodes, materials } = useGLTF('/port/scene.glb')
+  const screenFrameref = useRef<THREE.Mesh>(null!)
+  const [fov,setfov]=useState(10)
+  const [target,settarget]=useState<THREE.Vector3>(new THREE.Vector3(-0.1,1.37,0))
+  
+  useFrame((state, delta) => {
+    const r1 = scroll.range(0 / 3, 2 / 3)
+    const r2 = scroll.range(1 / 3, 3 / 3)
+
+    settarget(new THREE.Vector3(-0.1,THREE.MathUtils.lerp(1.34, 0.4, r2),0))
+    state.camera.position.z = THREE.MathUtils.lerp(1, 3, r1)
+    state.camera.position.y = THREE.MathUtils.lerp(1.4, 2, r1)
+    setfov(THREE.MathUtils.lerp(20, 40, r1))
+  })
+
   return (
     <group {...props} dispose={null}>
-        <OrbitControls />
+        <PerspectiveCamera position={[-0.1,1.4,1]} fov={fov}  makeDefault/>
+        <OrbitControls enableZoom={false} enableRotate={false} target={target}/>
       <mesh
         castShadow
         receiveShadow
         geometry={(nodes.Keyboard as THREE.Mesh).geometry}
         material={materials.Keyboard}
+
       />
       <mesh
         castShadow
@@ -65,6 +85,7 @@ export function Model(props :any) {
         scale={[0.021, 0.234, 0.021]}
       />
       <mesh
+        ref={screenFrameref}
         castShadow
         receiveShadow
         geometry={(nodes.ScreenFrame as THREE.Mesh).geometry}
@@ -78,3 +99,5 @@ export function Model(props :any) {
 }
 
 useGLTF.preload('/port/scene.glb')
+
+
