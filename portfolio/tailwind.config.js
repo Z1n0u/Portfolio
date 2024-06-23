@@ -24,7 +24,7 @@ export default {
         bold: '600',
       },
       colors:{
-        'background':'#262d1e',
+        'background':'#19252b',
     },
   },
   plugins: [],

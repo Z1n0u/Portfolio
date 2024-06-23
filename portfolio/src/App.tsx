@@ -16,7 +16,7 @@ const spotlight = useMemo(() => new THREE.SpotLight(0xffffff, 0.03, distance, an
 
 return (
     <>
-    <div className='h-lvh'>
+    {/* <div className='h-lvh'>
         <Canvas>
             <ambientLight intensity={1.9}  color={0x404040}/>
             <directionalLight intensity={0.5} color={0xffffff}  position={[15, 1.5, 2]} />
@@ -34,15 +34,11 @@ return (
               </ScrollControls>
             </Suspense>
         </Canvas>
-    </div>
+    </div> */}
       <Navbar/>
-      <>
         <div className='absolute top-0 left-0 w-full'>
-          
           <Home/>
-
         </div>
-      </>
     </>
   )
 }
