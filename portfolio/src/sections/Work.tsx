@@ -22,7 +22,7 @@ export function Work () {
         },
     }
   return (
-    <div className="relative w-[80%] overflow-x-hidden left-24">
+    <div className="relative w-[80%] left-24">
       <h3 className="text-white flex items-center text-2xl font-bold">
         <span className="bg-gradient-to-r from-amber-200 to-yellow-500 w-12 h-3 mr-4"/>
         WORK
