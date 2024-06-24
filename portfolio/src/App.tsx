@@ -6,6 +6,7 @@ import {Model} from './Compenents/Model'
 import { Suspense, useMemo,useEffect, useRef } from 'react'
 import * as THREE from 'three'
 import { ScrollControls } from '@react-three/drei'
+import { Work } from './sections/Work'
 
 export default function App() {
 const distance=25;
@@ -13,6 +14,7 @@ const angel=Math.PI/6;
 const penumbra=0.5;
 const decay=0.5;
 const spotlight = useMemo(() => new THREE.SpotLight(0xffffff, 0.03, distance, angel, penumbra, decay), []);
+
 
 return (
     <>
@@ -36,9 +38,10 @@ return (
         </Canvas>
     </div> */}
       <Navbar/>
-        <div className='absolute top-0 left-0 w-full'>
+        <div className='relative top-0 left-0 w-full h-lvh overflow-x-hidden'>
           <Home/>
         </div>
+          <Work/>
     </>
   )
 }
