@@ -7,6 +7,8 @@ import { Suspense, useMemo,useEffect, useRef } from 'react'
 import * as THREE from 'three'
 import { ScrollControls } from '@react-three/drei'
 import { Work } from './sections/Work'
+import { About } from './sections/About'
+import Footer from './Compenents/Footer'
 
 export default function App() {
 const distance=25;
@@ -38,10 +40,16 @@ return (
         </Canvas>
     </div> */}
       <Navbar/>
+      <Footer/>
         <div className='relative top-0 left-0 w-full h-lvh overflow-x-hidden'>
           <Home/>
         </div>
+        <div className='pb-32 overflow-hidden'>
           <Work/>
+        </div>
+        <div>
+          <About/>
+        </div>
     </>
   )
 }
