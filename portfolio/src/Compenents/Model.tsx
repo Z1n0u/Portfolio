@@ -1,7 +1,7 @@
 
-import { Environment, PerspectiveCamera, useGLTF, useScroll } from '@react-three/drei'
+import {  PerspectiveCamera, useGLTF, useScroll } from '@react-three/drei'
 import { OrbitControls,useTexture } from '@react-three/drei'
-import { events, useFrame } from '@react-three/fiber'
+import {  useFrame } from '@react-three/fiber'
 import { useRef, useState } from 'react'
 import * as THREE from 'three'
 
@@ -31,7 +31,7 @@ export function Model(props :any) {
   //   mouseXRef.current = (event.clientX / window.innerWidth) * 2 - 1;
   // };
   
-  useFrame((state, delta) => {
+  useFrame((state) => {
       const r1 = scroll.range(0 / 3, 2 / 3)
       const r2 = scroll.range(1 / 3, 3 / 3)
       

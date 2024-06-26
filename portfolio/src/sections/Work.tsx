@@ -1,4 +1,4 @@
-import { MotionProps, MotionStyle, motion, transform } from "framer-motion";
+import {  motion } from "framer-motion";
 
 
 export function Work () {

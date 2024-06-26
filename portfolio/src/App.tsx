@@ -1,21 +1,16 @@
 
 import {Home} from './sections/Home'
 import Navbar from './Compenents/Navbar'
-import { Canvas,useFrame} from '@react-three/fiber'
-import {Model} from './Compenents/Model'
-import { Suspense, useMemo,useEffect, useRef } from 'react'
-import * as THREE from 'three'
-import { ScrollControls } from '@react-three/drei'
 import { Work } from './sections/Work'
 import { About } from './sections/About'
 import Footer from './Compenents/Footer'
 
 export default function App() {
-const distance=25;
-const angel=Math.PI/6;
-const penumbra=0.5;
-const decay=0.5;
-const spotlight = useMemo(() => new THREE.SpotLight(0xffffff, 0.03, distance, angel, penumbra, decay), []);
+// const distance=25;
+// const angel=Math.PI/6;
+// const penumbra=0.5;
+// const decay=0.5;
+// const spotlight = useMemo(() => new THREE.SpotLight(0xffffff, 0.03, distance, angel, penumbra, decay), []);
 
 
 return (
