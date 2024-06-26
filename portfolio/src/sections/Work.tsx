@@ -49,7 +49,7 @@ export function Work () {
                 
                 <motion.div variants={variantforshowcaseDiv} transition={{  duration: 1, ease: "easeInOut"}} className="flex bg-black w-96 h-44 absolute top-0 right-[5%]">
                   <div className="relative flex w-full h-full">
-                    <img src="ListeRapportAgent.png" alt=""  className="w-full h-full  object-cover"/>
+                    <img src="https://utfs.io/f/e223f295-415f-42be-b330-59d8de615d5f-keb9xm.png" alt=""  className="w-full h-full  object-cover"/>
                     <div className="flex absolute -top-2 -left-6 h-2 md:h-3 lg:h-4 w-14 bg-gradient-to-r from-emerald-400 to-cyan-400"></div>
                     <div className="flex absolute -bottom-2 -right-5 h-2 md:h-3 lg:h-4 w-20 bg-gradient-to-r from-amber-200 to-yellow-500"></div>
                   </div>
@@ -71,7 +71,7 @@ export function Work () {
                 
                 <motion.div variants={variantforshowcaseDiv} transition={{  duration: 1, ease: "easeInOut"}} className="flex bg-black w-96 h-44 absolute top-0 right-[5%]">
                   <div className="relative flex w-full h-full">
-                    <img src="lugx.png" alt=""  className="w-full h-full  object-cover"/>
+                    <img src="https://utfs.io/f/905cea6f-e013-42da-bd1a-40931d10c7df-1zfwa.png" alt=""  className="w-full h-full  object-cover"/>
                     <div className="flex absolute -top-2 -left-6 h-2 md:h-3 lg:h-4 w-14 bg-gradient-to-r from-emerald-400 to-cyan-400"></div>
                     <div className="flex absolute -bottom-2 -right-5 h-2 md:h-3 lg:h-4 w-20 bg-gradient-to-r from-amber-200 to-yellow-500"></div>
                   </div>
@@ -87,7 +87,7 @@ export function Work () {
                 
                 <motion.div variants={variantforshowcaseDiv} transition={{  duration: 1, ease: "easeInOut"}} className="flex bg-black w-96 h-44 absolute top-0 right-[5%]">
                   <div className="relative flex w-full h-full">
-                    <img src="sneakers2.jpeg" alt=""  className="w-full h-full  object-cover"/>
+                    <img src="https://utfs.io/f/6ce0a29c-b222-4854-9c21-e85ee79c8a78-fk2gdc.jpeg" alt=""  className="w-full h-full  object-cover"/>
                     <div className="flex absolute -top-2 -left-6 h-2 md:h-3 lg:h-4 w-14 bg-gradient-to-r from-emerald-400 to-cyan-400"></div>
                     <div className="flex absolute -bottom-2 -right-5 h-2 md:h-3 lg:h-4 w-20 bg-gradient-to-r from-amber-200 to-yellow-500"></div>
                   </div>
