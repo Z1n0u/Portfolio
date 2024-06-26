@@ -62,6 +62,22 @@ export function Work () {
         Side Projects
       </h3>
       <ul className="pt-4 pb-4 relative">
+      <li>
+        <motion.a href="https://lugx-ten.vercel.app" target="_blank" className="flex items-center gap-3" initial="hidden" whileHover="visible">
+                <motion.span variants={variantforbar} className="h-4 bg-gradient-to-r from-fuchsia-500 to-pink-500"></motion.span>
+                <span className="text-lg text-white test">Lugx</span>
+                <span className="bg-gradient-to-r from-red-500 to-orange-500 rounded-full inline-block w-2 h-2 md:h-3 md:w-3 lg:h-4 lg:w-4 "></span>
+                <motion.span variants={variantforsmalltest} className="text-white opacity-50 hover:opacity-100">Games selling websites</motion.span>
+                
+                <motion.div variants={variantforshowcaseDiv} transition={{  duration: 1, ease: "easeInOut"}} className="flex bg-black w-96 h-44 absolute top-0 right-[5%]">
+                  <div className="relative flex w-full h-full">
+                    <img src="lugx.png" alt=""  className="w-full h-full  object-cover"/>
+                    <div className="flex absolute -top-2 -left-6 h-2 md:h-3 lg:h-4 w-14 bg-gradient-to-r from-emerald-400 to-cyan-400"></div>
+                    <div className="flex absolute -bottom-2 -right-5 h-2 md:h-3 lg:h-4 w-20 bg-gradient-to-r from-amber-200 to-yellow-500"></div>
+                  </div>
+                </motion.div>
+            </motion.a>
+        </li>
         <li>
         <motion.a href="https://z1n0u.github.io/E-commerce-sneakers/" target="_blank" className="flex items-center gap-3" initial="hidden" whileHover="visible">
                 <motion.span variants={variantforbar} className="h-4 bg-gradient-to-r from-fuchsia-500 to-pink-500"></motion.span>
@@ -71,13 +87,14 @@ export function Work () {
                 
                 <motion.div variants={variantforshowcaseDiv} transition={{  duration: 1, ease: "easeInOut"}} className="flex bg-black w-96 h-44 absolute top-0 right-[5%]">
                   <div className="relative flex w-full h-full">
-                    <img src="sneakers2.jpeg" alt=""  className="w-full h-full  object-fill"/>
+                    <img src="sneakers2.jpeg" alt=""  className="w-full h-full  object-cover"/>
                     <div className="flex absolute -top-2 -left-6 h-2 md:h-3 lg:h-4 w-14 bg-gradient-to-r from-emerald-400 to-cyan-400"></div>
                     <div className="flex absolute -bottom-2 -right-5 h-2 md:h-3 lg:h-4 w-20 bg-gradient-to-r from-amber-200 to-yellow-500"></div>
                   </div>
                 </motion.div>
             </motion.a>
         </li>
+       
       </ul>
       <div className="w-[1px] h-[99%] bg-white absolute opacity-30 -left-6 top-0 after:opacity-95 after:absolute after:bottom-0 after:-left-2 after:h-0 after:w-0 after:border-x-8 after:border-x-transparent after:border-t-[9px]"></div>
     </div>
