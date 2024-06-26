@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 export function About () {
   return (
-    <div className="relative w-[80%]  left-24">
+    <div id="about" className="relative w-[80%]  left-24">
        <h3 className="text-white mb-4 flex items-center text-2xl font-bold">
         Hi I'm Tarek
       </h3>

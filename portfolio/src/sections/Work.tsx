@@ -34,38 +34,22 @@ export function Work () {
       },
   }
   return (
-    <div className="relative w-[80%] left-24">
+    <div id="work" className="relative w-[80%] left-24">
       <h3 className="text-white flex items-center text-2xl font-bold">
         <span className="bg-gradient-to-r from-amber-200 to-yellow-500 w-12 h-3 mr-4"/>
         WORK
       </h3>
       <ul className="pt-4 pb-4 relative">
         <li>
-            <motion.a href="https://www.youtube.com/" target="_blank" className="flex items-center gap-3" initial="hidden" whileHover="visible">
+            <motion.a  target="_blank" className="flex items-center gap-3" initial="hidden" whileHover="visible">
                 <motion.span variants={variantforbar} className="h-4 bg-gradient-to-r from-fuchsia-500 to-pink-500"></motion.span>
-                <span className="text-lg text-white test">TEST</span>
+                <span className="text-lg text-white test">Incident Management App</span>
                 <span className="bg-gradient-to-r from-red-500 to-orange-500 rounded-full inline-block w-2 h-2 md:h-3 md:w-3 lg:h-4 lg:w-4 "></span>
-                <motion.span variants={variantforsmalltest} className="text-white opacity-50 hover:opacity-100">tesffffffffffffffffffffffffffffffft</motion.span>
+                <motion.span variants={variantforsmalltest} className="text-white opacity-50 hover:opacity-100">For BNA (bank)</motion.span>
                 
                 <motion.div variants={variantforshowcaseDiv} transition={{  duration: 1, ease: "easeInOut"}} className="flex bg-black w-96 h-44 absolute top-0 right-[5%]">
                   <div className="relative flex w-full h-full">
-                    <img src="work/hero-image.fill.size_1248x702.v1623387368.png" alt=""  className="w-full h-full  object-fill"/>
-                    <div className="flex absolute -top-2 -left-6 h-2 md:h-3 lg:h-4 w-14 bg-gradient-to-r from-emerald-400 to-cyan-400"></div>
-                    <div className="flex absolute -bottom-2 -right-5 h-2 md:h-3 lg:h-4 w-20 bg-gradient-to-r from-amber-200 to-yellow-500"></div>
-                  </div>
-                </motion.div>
-            </motion.a>
-        </li>
-        <li>
-        <motion.a href="https://www.youtube.com/" target="_blank" className="flex items-center gap-3" initial="hidden" whileHover="visible">
-                <motion.span variants={variantforbar} className="h-4 bg-gradient-to-r from-fuchsia-500 to-pink-500"></motion.span>
-                <span className="text-lg text-white test">TEST</span>
-                <span className="bg-gradient-to-r from-red-500 to-orange-500 rounded-full inline-block w-2 h-2 md:h-3 md:w-3 lg:h-4 lg:w-4 "></span>
-                <motion.span variants={variantforsmalltest} className="text-white opacity-50 hover:opacity-100">tesffffffffffffffffffffffffffffffft</motion.span>
-                
-                <motion.div variants={variantforshowcaseDiv} transition={{  duration: 1, ease: "easeInOut"}} className="flex bg-black w-96 h-44 absolute top-0 right-[5%]">
-                  <div className="relative flex w-full h-full">
-                    <img src="work/hero-image.fill.size_1248x702.v1623387368.png" alt=""  className="w-full h-full  object-fill"/>
+                    <img src="ListeRapportAgent.png" alt=""  className="w-full h-full  object-cover"/>
                     <div className="flex absolute -top-2 -left-6 h-2 md:h-3 lg:h-4 w-14 bg-gradient-to-r from-emerald-400 to-cyan-400"></div>
                     <div className="flex absolute -bottom-2 -right-5 h-2 md:h-3 lg:h-4 w-20 bg-gradient-to-r from-amber-200 to-yellow-500"></div>
                   </div>
@@ -79,31 +63,15 @@ export function Work () {
       </h3>
       <ul className="pt-4 pb-4 relative">
         <li>
-            <motion.a href="https://www.youtube.com/" target="_blank" className="flex items-center gap-3" initial="hidden" whileHover="visible">
+        <motion.a href="https://z1n0u.github.io/E-commerce-sneakers/" target="_blank" className="flex items-center gap-3" initial="hidden" whileHover="visible">
                 <motion.span variants={variantforbar} className="h-4 bg-gradient-to-r from-fuchsia-500 to-pink-500"></motion.span>
-                <span className="text-lg text-white test">TEST</span>
+                <span className="text-lg text-white test">.Sneakers</span>
                 <span className="bg-gradient-to-r from-red-500 to-orange-500 rounded-full inline-block w-2 h-2 md:h-3 md:w-3 lg:h-4 lg:w-4 "></span>
-                <motion.span variants={variantforsmalltest} className="text-white opacity-50 hover:opacity-100">tesffffffffffffffffffffffffffffffft</motion.span>
+                <motion.span variants={variantforsmalltest} className="text-white opacity-50 hover:opacity-100">E-commers site for sneakers</motion.span>
                 
                 <motion.div variants={variantforshowcaseDiv} transition={{  duration: 1, ease: "easeInOut"}} className="flex bg-black w-96 h-44 absolute top-0 right-[5%]">
                   <div className="relative flex w-full h-full">
-                    <img src="work/hero-image.fill.size_1248x702.v1623387368.png" alt=""  className="w-full h-full  object-fill"/>
-                    <div className="flex absolute -top-2 -left-6 h-2 md:h-3 lg:h-4 w-14 bg-gradient-to-r from-emerald-400 to-cyan-400"></div>
-                    <div className="flex absolute -bottom-2 -right-5 h-2 md:h-3 lg:h-4 w-20 bg-gradient-to-r from-amber-200 to-yellow-500"></div>
-                  </div>
-                </motion.div>
-            </motion.a>
-        </li>
-        <li>
-        <motion.a href="https://www.youtube.com/" target="_blank" className="flex items-center gap-3" initial="hidden" whileHover="visible">
-                <motion.span variants={variantforbar} className="h-4 bg-gradient-to-r from-fuchsia-500 to-pink-500"></motion.span>
-                <span className="text-lg text-white test">TEST</span>
-                <span className="bg-gradient-to-r from-red-500 to-orange-500 rounded-full inline-block w-2 h-2 md:h-3 md:w-3 lg:h-4 lg:w-4 "></span>
-                <motion.span variants={variantforsmalltest} className="text-white opacity-50 hover:opacity-100">tesffffffffffffffffffffffffffffffft</motion.span>
-                
-                <motion.div variants={variantforshowcaseDiv} transition={{  duration: 1, ease: "easeInOut"}} className="flex bg-black w-96 h-44 absolute top-0 right-[5%]">
-                  <div className="relative flex w-full h-full">
-                    <img src="work/hero-image.fill.size_1248x702.v1623387368.png" alt=""  className="w-full h-full  object-fill"/>
+                    <img src="sneakers2.jpeg" alt=""  className="w-full h-full  object-fill"/>
                     <div className="flex absolute -top-2 -left-6 h-2 md:h-3 lg:h-4 w-14 bg-gradient-to-r from-emerald-400 to-cyan-400"></div>
                     <div className="flex absolute -bottom-2 -right-5 h-2 md:h-3 lg:h-4 w-20 bg-gradient-to-r from-amber-200 to-yellow-500"></div>
                   </div>
