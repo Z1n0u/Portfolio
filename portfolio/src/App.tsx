@@ -42,7 +42,7 @@ return (
         <div className='pb-32 overflow-hidden'>
           <Work/>
         </div>
-        <div>
+        <div className='pb-32'>
           <About/>
         </div>
     </>
